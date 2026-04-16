@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Website Prompt Generator - TemplateMo</title>
+<meta content="Generate detailed AI prompts to create beautiful website designs. Choose your style, layout, colors, and features — get a ready-to-use prompt for ChatGPT, Claude, or any AI." name="description"/>
+<!-- Google tag (gtag.js) - GA4 --><script async="" src="https://www.googletagmanager.com/gtag/js/?id=G-QXBKLSCCBE"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QXBKLSCCBE');</script>
+<script src="../assets/js/cmp-77047164.js"></script>
+<script async="async" src="../assets/js/sharethis-5b963009.js" type="text/javascript"></script>
+<script> window.googletag = window.googletag || {}; window.googletag.cmd = window.googletag.cmd || []; window.googletag.cmd.push(() => { window.googletag.pubads().enableAsyncRendering(); window.googletag.pubads().disableInitialLoad(); } ); const injectPgScript = (src, isAsync, onLoadCallback) => { if (!src) return; const script = document.createElement("script"); script.src = src; if (isAsync) script.async = isAsync; if (onLoadCallback) script.onload = onLoadCallback; document.head.appendChild(script); } ; const initiatePgAds = () => { !!window.__tcfapi && window.__tcfapi("addEventListener", 2, (tcData, success) => { if (success && (tcData.eventStatus === "useractioncomplete" || tcData.eventStatus === "tcloaded" || tcData.gdprApplies === false)) { if (!window._initAds) { window._initAds = true; injectPgScript("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", true); injectPgScript("//dsh7ky7308k4b.cloudfront.net/publishers/templatemocom.min.js", true); injectPgScript("//btloader.com/tag?o=5184339635601408&upapi=true", true); } } } ); } ; injectPgScript("https://securepubads.g.doubleclick.net/tag/js/gpt.js?network-code=8095840", true, () => { window.googlefc = window.googlefc || { callbackQueue: [] }; window.googlefc.callbackQueue.push({ "CONSENT_API_READY": () => initiatePgAds() }); } );</script>
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2/?display=swap&amp;family=JetBrains+Mono%3Awght%40400%3B500&amp;family=Outfit%3Awght%40300%3B400%3B500%3B600%3B700%3B800" rel="stylesheet"/>
+<link href="https://templatemo.com/ai-website-prompt-generator/tm-prompt-04.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="bg-effects">
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+</div>
+<header class="site-header">
+<div class="header-inner">
+<a class="logo" href="#">
+<div class="logo-icon">AI</div>
+<div class="logo-text"><span class="tm-template">Template</span><span class="tm-mo">Mo</span> <span>/ Prompt Builder</span></div>
+</a>
+<div class="header-right">
+<div class="header-badge">Beta</div>
+<div aria-label="Toggle dark mode" class="theme-toggle" onclick="toggleTheme()" role="button" tabindex="0">
+<div class="toggle-track">
+<div class="toggle-dot"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="main-container">
+<section class="hero">
+<h1>Build Your <span class="gradient-text">AI Website Prompt</span></h1>
+<p>Describe your dream website step by step. Get a detailed, ready-to-use prompt for any AI tool.</p>
+</section>
+<hr class="hero-separator"/>
+<!-- Step 1: Type -->
+<div class="step-panel active" data-step="1">
+<div class="step-header"><h2 class="step-title">What type of website?</h2><span class="step-counter" id="stepCounter">Step 1 of 7</span></div>
+<p class="step-description">Choose the category that best matches your project.</p>
+<div id="typeGrid">
+<div class="style-group">
+<div class="style-group-label">Services &amp; Business</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="Business / Corporate" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🏢</span><div class="card-content"><div class="card-title">Business</div><div class="card-desc">Corporate, agency, consulting</div></div></div>
+<div class="select-card" data-value="Restaurant / Cafe" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🍴</span><div class="card-content"><div class="card-title">Restaurant</div><div class="card-desc">Cafe, bakery, food business</div></div></div>
+<div class="select-card" data-value="Real Estate / Property" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🏠</span><div class="card-content"><div class="card-title">Real Estate</div><div class="card-desc">Property, listings, agency</div></div></div>
+<div class="select-card" data-value="Health / Wellness" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🌿</span><div class="card-content"><div class="card-title">Health / Wellness</div><div class="card-desc">Spa, fitness, medical</div></div></div>
+<div class="select-card" data-value="Law / Legal Services" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">⚖</span><div class="card-content"><div class="card-title">Law / Legal</div><div class="card-desc">Attorney, law firm, legal</div></div></div>
+<div class="select-card" data-value="Gym / Fitness Studio" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">💪</span><div class="card-content"><div class="card-title">Gym / Fitness</div><div class="card-desc">Training, sports, wellness</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Creative &amp; Personal</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="Portfolio / Personal" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🎨</span><div class="card-content"><div class="card-title">Portfolio</div><div class="card-desc">Personal, creative showcase</div></div></div>
+<div class="select-card" data-value="Photography / Gallery" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">📷</span><div class="card-content"><div class="card-title">Photography</div><div class="card-desc">Gallery, visual portfolio</div></div></div>
+<div class="select-card" data-value="Blog / Magazine" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">📝</span><div class="card-content"><div class="card-title">Blog / Magazine</div><div class="card-desc">Content, news, articles</div></div></div>
+<div class="select-card" data-value="Music / Band" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🎵</span><div class="card-content"><div class="card-title">Music / Band</div><div class="card-desc">Artist, band, music studio</div></div></div>
+<div class="select-card" data-value="Wedding / Celebration" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">💒</span><div class="card-content"><div class="card-title">Wedding</div><div class="card-desc">Celebration, invitation, planner</div></div></div>
+<div class="select-card" data-value="Travel / Tourism" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🛫</span><div class="card-content"><div class="card-title">Travel</div><div class="card-desc">Tourism, booking, guides</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Commerce &amp; Community</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="SaaS / Landing Page" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🚀</span><div class="card-content"><div class="card-title">SaaS / Landing</div><div class="card-desc">Product, startup, app landing</div></div></div>
+<div class="select-card" data-value="E-Commerce / Online Store" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🛒</span><div class="card-content"><div class="card-title">E-Commerce</div><div class="card-desc">Online store, product catalog</div></div></div>
+<div class="select-card" data-value="Education / Course" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🎓</span><div class="card-content"><div class="card-title">Education</div><div class="card-desc">Course, school, e-learning</div></div></div>
+<div class="select-card" data-value="Event / Conference" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">🎪</span><div class="card-content"><div class="card-title">Event</div><div class="card-desc">Conference, meetup, festival</div></div></div>
+<div class="select-card" data-value="Non-Profit / Charity" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">💚</span><div class="card-content"><div class="card-title">Non-Profit</div><div class="card-desc">Charity, NGO, cause</div></div></div>
+<div class="select-card" data-value="Church / Religious Organization" onclick="selectCard(this,'type')"><span class="check-mark">✓</span><span class="card-icon">⛪</span><div class="card-content"><div class="card-title">Church</div><div class="card-desc">Religious, community, ministry</div></div></div>
+</div>
+</div>
+</div>
+<div class="validation-nudge" id="typeNudge">Please select a website type to continue.</div>
+<div class="step-nav"><div></div><button class="btn btn-primary" onclick="validateAndNext(1)">Next →</button></div>
+</div>
+<!-- Step 2: Style -->
+<div class="step-panel" data-step="2">
+<div class="step-header"><h2 class="step-title">Pick a design style</h2><span class="step-counter">Step 2 of 7</span></div>
+<p class="step-description">Select the overall aesthetic direction for your website.</p>
+<div id="styleGrid">
+<div class="style-group">
+<div class="style-group-label">Clean &amp; Structured</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="Minimalist and Clean" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">⬜</span><div class="card-content"><div class="card-title">Minimalist</div><div class="card-desc">Clean, whitespace, elegant</div></div></div>
+<div class="select-card" data-value="Corporate and Professional" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">👔</span><div class="card-content"><div class="card-title">Corporate</div><div class="card-desc">Trust, structure, professional</div></div></div>
+<div class="select-card" data-value="Swiss / International style with grid-heavy layout and clean Helvetica typography" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🇨🇭</span><div class="card-content"><div class="card-title">Swiss</div><div class="card-desc">Grid-heavy, Helvetica, typographic</div></div></div>
+<div class="select-card" data-value="Flat / Material design with clean surfaces and subtle elevation" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">◼</span><div class="card-content"><div class="card-title">Flat / Material</div><div class="card-desc">Clean surfaces, subtle elevation</div></div></div>
+<div class="select-card" data-value="Nordic / Scandinavian with muted tones and functional simplicity" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">❄</span><div class="card-content"><div class="card-title">Nordic</div><div class="card-desc">Muted tones, functional, airy</div></div></div>
+<div class="select-card" data-value="Bento Grid layout with mixed card sizes inspired by Apple design" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🍱</span><div class="card-content"><div class="card-title">Bento Grid</div><div class="card-desc">Apple-style mixed card sizes</div></div></div>
+<div class="select-card" data-value="Japanese / Zen with wabi-sabi aesthetics and intentional asymmetry" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">⛩</span><div class="card-content"><div class="card-title">Japanese / Zen</div><div class="card-desc">Wabi-sabi, muted, asymmetric</div></div></div>
+<div class="select-card" data-value="Neomorphism with soft shadows" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">⚪</span><div class="card-content"><div class="card-title">Neomorphism</div><div class="card-desc">Soft UI, embossed, subtle depth</div></div></div>
+<div class="select-card" data-value="Elegant and Luxury" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">✨</span><div class="card-content"><div class="card-title">Luxury</div><div class="card-desc">Premium, serif fonts, gold accents</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Bold &amp; Dynamic</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="Dark and Modern" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌑</span><div class="card-content"><div class="card-title">Dark Modern</div><div class="card-desc">Dark theme, sleek, tech-forward</div></div></div>
+<div class="select-card" data-value="Cyberpunk / Neon" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌌</span><div class="card-content"><div class="card-title">Cyberpunk</div><div class="card-desc">Neon glow, futuristic, high contrast</div></div></div>
+<div class="select-card" data-value="Brutalist / Raw" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🧱</span><div class="card-content"><div class="card-title">Brutalist</div><div class="card-desc">Raw, bold, anti-design</div></div></div>
+<div class="select-card" data-value="Maximalist with bold patterns and layered visuals" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🎆</span><div class="card-content"><div class="card-title">Maximalist</div><div class="card-desc">Bold patterns, layered, vibrant</div></div></div>
+<div class="select-card" data-value="Gradient and Abstract" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🎨</span><div class="card-content"><div class="card-title">Gradient</div><div class="card-desc">Colorful gradients, abstract art</div></div></div>
+<div class="select-card" data-value="Playful and Colorful" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌈</span><div class="card-content"><div class="card-title">Playful</div><div class="card-desc">Fun, vibrant, rounded shapes</div></div></div>
+<div class="select-card" data-value="Editorial / Magazine with bold typography and asymmetric layouts" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">📰</span><div class="card-content"><div class="card-title">Editorial</div><div class="card-desc">Bold headlines, magazine layout</div></div></div>
+<div class="select-card" data-value="Parallax / Immersive with scroll-driven animations and layered depth" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌍</span><div class="card-content"><div class="card-title">Parallax</div><div class="card-desc">Scroll-driven, layered, immersive</div></div></div>
+<div class="select-card" data-value="Terminal / Hacker aesthetic with monospace fonts and code-inspired UI" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">💻</span><div class="card-content"><div class="card-title">Terminal</div><div class="card-desc">Monospace, code aesthetic, hacker</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Textured &amp; Themed</div>
+<div class="card-grid horizontal">
+<div class="select-card" data-value="Glassmorphism with frosted glass effects" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">💎</span><div class="card-content"><div class="card-title">Glassmorphism</div><div class="card-desc">Frosted glass, blur, translucent</div></div></div>
+<div class="select-card" data-value="Glasspunk / Transparent with vivid colors and layered glass panels" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🔮</span><div class="card-content"><div class="card-title">Glasspunk</div><div class="card-desc">Vivid glass layers, colorful depth</div></div></div>
+<div class="select-card" data-value="Skeuomorphic with realistic textures and shadows mimicking physical objects" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">📓</span><div class="card-content"><div class="card-title">Skeuomorphic</div><div class="card-desc">Realistic textures, physical look</div></div></div>
+<div class="select-card" data-value="Art Deco with geometric patterns and gold accents" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">💠</span><div class="card-content"><div class="card-title">Art Deco</div><div class="card-desc">Geometric, gold lines, 1920s elegance</div></div></div>
+<div class="select-card" data-value="Boho / Bohemian with handwritten fonts and earthy textures" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌻</span><div class="card-content"><div class="card-title">Bohemian</div><div class="card-desc">Handwritten fonts, warm, eclectic</div></div></div>
+<div class="select-card" data-value="Industrial with exposed textures, steel tones, and monospace fonts" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🏭</span><div class="card-content"><div class="card-title">Industrial</div><div class="card-desc">Brick, steel, concrete feel</div></div></div>
+<div class="select-card" data-value="Vintage Rustic with hand-drawn illustrations and chalkboard textures" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">✍</span><div class="card-content"><div class="card-title">Vintage Rustic</div><div class="card-desc">Chalkboard, hand-drawn, artisan</div></div></div>
+<div class="select-card" data-value="Organic and Natural" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">🌿</span><div class="card-content"><div class="card-title">Organic</div><div class="card-desc">Earthy, warm, nature-inspired</div></div></div>
+<div class="select-card" data-value="Retro / Vintage" onclick="selectCard(this,'style')"><span class="check-mark">✓</span><span class="card-icon">📼</span><div class="card-content"><div class="card-title">Retro</div><div class="card-desc">Vintage, nostalgic, classic vibes</div></div></div>
+</div>
+</div>
+</div>
+<div class="step-nav"><button class="btn btn-secondary" onclick="prevStep()">← Back</button><a class="skip-link" onclick="nextStep()">Skip this step</a><button class="btn btn-primary" onclick="nextStep()">Next →</button></div>
+</div>
+<!-- Step 3: Colors -->
+<div class="step-panel" data-step="3">
+<div class="step-header"><h2 class="step-title">Choose a color scheme</h2><span class="step-counter">Step 3 of 7</span></div>
+<p class="step-description">Pick a curated palette or enter your own brand colors below.</p>
+<div id="colorGrid">
+<div class="style-group">
+<div class="style-group-label">Light &amp; Clean</div>
+<div class="card-grid wide">
+<div class="select-card color-card" data-palette="classic-blue" data-value="Blue (#3B82F6) as primary with white (#ffffff) background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#ffffff"></span><span style="background:#3B82F6"></span><span style="background:#1E293B"></span><span style="background:#F1F5F9"></span></div><div class="card-title-row"><div class="card-title">Classic Blue</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="forest-green" data-value="Emerald (#10B981) and Forest (#064E3B) with light background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#F0FDF4"></span><span style="background:#10B981"></span><span style="background:#064E3B"></span><span style="background:#ffffff"></span></div><div class="card-title-row"><div class="card-title">Forest Green</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="ocean-blue" data-value="Ocean Blue (#0077B6) as primary with white background and dark navy (#023E8A) accents" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#ffffff"></span><span style="background:#0077B6"></span><span style="background:#023E8A"></span><span style="background:#CAF0F8"></span></div><div class="card-title-row"><div class="card-title">Ocean Blue</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="modern-teal" data-value="Teal (#2a7d6e) as primary with white background and dark teal (#1e5f53) accents" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#ffffff"></span><span style="background:#2a7d6e"></span><span style="background:#1e5f53"></span><span style="background:#E6F5F0"></span></div><div class="card-title-row"><div class="card-title">Modern Teal</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="monochrome" data-value="Slate (#64748B) and Neutral (#171717) with white background for a monochrome look" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#ffffff"></span><span style="background:#171717"></span><span style="background:#64748B"></span><span style="background:#F8FAFC"></span></div><div class="card-title-row"><div class="card-title">Monochrome</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="soft-blush" data-value="Soft Pink (#e8a0bf) as primary with light blush (#FDF2F8) background and mauve (#9d4e7c) accents" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#FDF2F8"></span><span style="background:#e8a0bf"></span><span style="background:#9d4e7c"></span><span style="background:#ffffff"></span></div><div class="card-title-row"><div class="card-title">Soft Blush</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="lavender" data-value="Lavender (#9b8ec4) and Soft Purple (#7c6daa) with light (#F5F3FF) background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#F5F3FF"></span><span style="background:#9b8ec4"></span><span style="background:#7c6daa"></span><span style="background:#ffffff"></span></div><div class="card-title-row"><div class="card-title">Lavender</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="nordic-slate" data-value="Nordic slate palette with ice gray (#F0F5F9) background, cool steel (#C9D6DF), slate (#52616B), and near-black (#1E2022)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#F0F5F9"></span><span style="background:#C9D6DF"></span><span style="background:#52616B"></span><span style="background:#1E2022"></span></div><div class="card-title-row"><div class="card-title">Nordic Slate</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="silver-lining" data-value="Silver lining palette with charcoal (#595959), grey (#7F7F7F), silver (#A5A5A5), dust grey (#CCCCCC), and platinum (#F2F2F2)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#595959"></span><span style="background:#A5A5A5"></span><span style="background:#CCCCCC"></span><span style="background:#F2F2F2"></span></div><div class="card-title-row"><div class="card-title">Silver Lining</div><div class="color-rec">Suggested</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Warm &amp; Earthy</div>
+<div class="card-grid wide">
+<div class="select-card color-card" data-palette="sunset-rose" data-value="Rose (#F43F5E) and Coral (#FB923C) with light (#FFF1F2) background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#FFF1F2"></span><span style="background:#F43F5E"></span><span style="background:#FB923C"></span><span style="background:#ffffff"></span></div><div class="card-title-row"><div class="card-title">Sunset Rose</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="charcoal-gold" data-value="Charcoal (#333333) with Gold (#d4a843) accents on white background for a luxury feel" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#ffffff"></span><span style="background:#333333"></span><span style="background:#d4a843"></span><span style="background:#F5F0E8"></span></div><div class="card-title-row"><div class="card-title">Charcoal &amp; Gold</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="warm-neutral" data-value="Warm neutral palette with cream (#EFE9E3), sand (#D9CFC7), camel (#C9B59C), and soft rose (#F7A5A5) accents on white background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#EFE9E3"></span><span style="background:#D9CFC7"></span><span style="background:#C9B59C"></span><span style="background:#F7A5A5"></span></div><div class="card-title-row"><div class="card-title">Warm Neutral</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="greenery-moss" data-value="Greenery palette with soft green (#EBF4DD) background, muted sage (#90AB8B), forest (#5A7863), and dark teal (#3B4953)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#EBF4DD"></span><span style="background:#90AB8B"></span><span style="background:#5A7863"></span><span style="background:#3B4953"></span></div><div class="card-title-row"><div class="card-title">Greenery Moss</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="pastel-dream" data-value="Pastel palette with soft blue (#9ECAD6), muted indigo (#748DAE), blush pink (#F5CBCB), and light rose (#FFEAEA)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#9ECAD6"></span><span style="background:#748DAE"></span><span style="background:#F5CBCB"></span><span style="background:#FFEAEA"></span></div><div class="card-title-row"><div class="card-title">Pastel Dream</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="ice-cream" data-value="Ice cream palette with icy blue (#F2F9FF) background, candy pink (#FFCCE1), mauve rose (#E195AB), and vanilla (#FFF5D7)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#F2F9FF"></span><span style="background:#FFCCE1"></span><span style="background:#E195AB"></span><span style="background:#FFF5D7"></span></div><div class="card-title-row"><div class="card-title">Ice Cream</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="honey-orange" data-value="Honey orange palette with warm white (#FFFDF1) background, peach (#FFCE99), bright orange (#FF9644), and deep brown (#562F00)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#FFFDF1"></span><span style="background:#FFCE99"></span><span style="background:#FF9644"></span><span style="background:#562F00"></span></div><div class="card-title-row"><div class="card-title">Honey Orange</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="summer-fields" data-value="Golden summer palette with dry sage (#CCD5AE), light olive (#E9EDC9), cornsilk (#FEFAE0), papaya whip (#FAEDCD), and light bronze (#D4A373)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#CCD5AE"></span><span style="background:#E9EDC9"></span><span style="background:#FEFAE0"></span><span style="background:#D4A373"></span></div><div class="card-title-row"><div class="card-title">Summer Fields</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="mauve-serenity" data-value="Mauve serenity palette with charcoal (#565264), dim grey (#706677), dusty mauve (#A6808C), almond silk (#CCB7AE), and dust grey (#D6CFCB)" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#565264"></span><span style="background:#A6808C"></span><span style="background:#CCB7AE"></span><span style="background:#D6CFCB"></span></div><div class="card-title-row"><div class="card-title">Mauve Serenity</div><div class="color-rec">Suggested</div></div></div>
+</div>
+</div>
+<div class="style-group">
+<div class="style-group-label">Dark &amp; Bold</div>
+<div class="card-grid wide">
+<div class="select-card color-card" data-palette="warm-amber" data-value="Amber (#F59E0B) as primary with warm dark (#1C1917) background" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#1C1917"></span><span style="background:#F59E0B"></span><span style="background:#78350F"></span><span style="background:#FEF3C7"></span></div><div class="card-title-row"><div class="card-title">Warm Amber</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="electric-orange" data-value="Electric Orange (#e8590c) as primary with dark (#1a1a1a) background and warm (#FFF7ED) accents" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#1a1a1a"></span><span style="background:#e8590c"></span><span style="background:#c2410c"></span><span style="background:#FFF7ED"></span></div><div class="card-title-row"><div class="card-title">Electric Orange</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="urban-dusk" data-value="Dark palette with charcoal (#222831) background, gunmetal (#393E46), warm khaki (#948979), and sand (#DFD0B8) accents" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#222831"></span><span style="background:#393E46"></span><span style="background:#948979"></span><span style="background:#DFD0B8"></span></div><div class="card-title-row"><div class="card-title">Urban Dusk</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="midnight" data-value="Midnight dark mode palette with near-black (#0a0a0a) background, dark gray (#1a1a1a) cards, soft white (#e0e0e0) text, and subtle (#2a2a2a) borders" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#0a0a0a"></span><span style="background:#1a1a1a"></span><span style="background:#2a2a2a"></span><span style="background:#e0e0e0"></span></div><div class="card-title-row"><div class="card-title">Midnight</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="graphite-copper" data-value="Graphite and Copper palette with warm charcoal (#1c1c1e) background, muted copper (#b87333) accents, cream (#f5f0e8) text, and dark card (#2c2c2e) surfaces" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#1c1c1e"></span><span style="background:#2c2c2e"></span><span style="background:#b87333"></span><span style="background:#f5f0e8"></span></div><div class="card-title-row"><div class="card-title">Graphite &amp; Copper</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="terminal-green" data-value="Terminal Green hacker palette with pure black (#0a0a0a) background, electric green (#00ff88) accents, dark green (#003322) secondary, and dark (#1a1a1a) surfaces" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#0a0a0a"></span><span style="background:#1a1a1a"></span><span style="background:#003322"></span><span style="background:#00ff88"></span></div><div class="card-title-row"><div class="card-title">Terminal Green</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="deep-ocean" data-value="Deep Ocean palette with very dark teal-gray (#0f1419) background, muted teal (#4a9a8e) accents, silver (#a8b2c1) text, and dark card (#192028) surfaces" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#0f1419"></span><span style="background:#192028"></span><span style="background:#4a9a8e"></span><span style="background:#a8b2c1"></span></div><div class="card-title-row"><div class="card-title">Deep Ocean</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="ink-paper" data-value="Ink and Paper editorial palette with off-black (#141517) background, warm white (#fffdf5) text, blue-gray (#7d8590) secondary, and dark slate (#1e2024) cards" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#141517"></span><span style="background:#1e2024"></span><span style="background:#7d8590"></span><span style="background:#fffdf5"></span></div><div class="card-title-row"><div class="card-title">Ink &amp; Paper</div><div class="color-rec">Suggested</div></div></div>
+<div class="select-card color-card" data-palette="neon-night" data-value="Neon Night cyberpunk palette with deep space (#0b0b1a) background, cyan (#00d9ff) primary, magenta (#ff00aa) accent, and dark navy (#1a1a2e) cards" onclick="selectCard(this,'color')"><span class="check-mark">✓</span><div class="color-swatches"><span style="background:#0b0b1a"></span><span style="background:#1a1a2e"></span><span style="background:#00d9ff"></span><span style="background:#ff00aa"></span></div><div class="card-title-row"><div class="card-title">Neon Night</div><div class="color-rec">Suggested</div></div></div>
+</div>
+</div>
+</div>
+<div class="custom-color-section">
+<label class="section-label" style="margin-top:20px">Or enter your own custom colors</label>
+<div class="custom-color-row">
+<div class="color-input-wrap"><label>Primary</label><div class="color-input-field"><input id="customColor1" type="color" value="#2a7d6e"/><input id="customColor1Text" maxlength="7" oninput="syncColor(this,'customColor1')" type="text" value="#2a7d6e"/></div></div>
+<div class="color-input-wrap"><label>Accent</label><div class="color-input-field"><input id="customColor2" type="color" value="#b8885a"/><input id="customColor2Text" maxlength="7" oninput="syncColor(this,'customColor2')" type="text" value="#b8885a"/></div></div>
+<div class="color-input-wrap"><label>Background</label><div class="color-input-field"><input id="customColor3" type="color" value="#ffffff"/><input id="customColor3Text" maxlength="7" oninput="syncColor(this,'customColor3')" type="text" value="#ffffff"/></div></div>
+<div class="color-input-wrap"><label>Text</label><div class="color-input-field"><input id="customColor4" type="color" value="#1e1e1c"/><input id="customColor4Text" maxlength="7" oninput="syncColor(this,'customColor4')" type="text" value="#1e1e1c"/></div></div>
+<div class="color-input-wrap"><label>Secondary</label><div class="color-input-field"><input id="customColor5" type="color" value="#f5f5f3"/><input id="customColor5Text" maxlength="7" oninput="syncColor(this,'customColor5')" type="text" value="#f5f5f3"/></div></div>
+</div>
+<button class="btn btn-secondary" onclick="applyCustomColors()" style="margin-top:12px;display:block;margin-left:auto;margin-right:auto">Apply Custom Colors</button>
+</div>
+<div class="step-nav"><button class="btn btn-secondary" onclick="prevStep()">← Back</button><a class="skip-link" onclick="nextStep()">Skip this step</a><button class="btn btn-primary" onclick="nextStep()">Next →</button></div>
+</div>
+<!-- Step 4: Layout -->
+<div class="step-panel" data-step="4">
+<div class="step-header"><h2 class="step-title">Layout preferences</h2><span class="step-counter">Step 4 of 7</span></div>
+<p class="step-description">Choose how key sections of your website should be structured.</p>
+<div style="margin-bottom:28px"><label class="section-label">Header / Navigation Style</label><div class="card-grid compact" id="headerGrid">
+<div class="select-card" data-value="Fixed top navigation bar" onclick="selectCard(this,'header')"><span class="check-mark">✓</span><div class="card-title">Top Navbar</div><div class="card-desc">Classic fixed header</div></div>
+<div class="select-card" data-value="Left sidebar navigation" onclick="selectCard(this,'header')"><span class="check-mark">✓</span><div class="card-title">Sidebar</div><div class="card-desc">Vertical left-side nav</div></div>
+<div class="select-card" data-value="Centered logo with navigation below" onclick="selectCard(this,'header')"><span class="check-mark">✓</span><div class="card-title">Centered</div><div class="card-desc">Logo center, links below</div></div>
+<div class="select-card" data-value="Hamburger menu only (hidden nav)" onclick="selectCard(this,'header')"><span class="check-mark">✓</span><div class="card-title">Hamburger</div><div class="card-desc">Hidden full-screen menu</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Hero Section Style</label><div class="card-grid compact" id="heroGrid">
+<div class="select-card" data-value="Full-screen hero with background image and centered text" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Full Image</div><div class="card-desc">Background image, centered text</div></div>
+<div class="select-card" data-value="Split hero with text on left and image on right" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Split Layout</div><div class="card-desc">Text left, image right</div></div>
+<div class="select-card" data-value="Gradient or animated background hero" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Gradient</div><div class="card-desc">Animated gradient background</div></div>
+<div class="select-card" data-value="Video background hero section" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Video BG</div><div class="card-desc">Looping video background</div></div>
+<div class="select-card" data-value="Minimal text-only hero with bold typography, no background image" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Text Only</div><div class="card-desc">Bold typography, minimal</div></div>
+<div class="select-card" data-value="Image slider or carousel hero rotating multiple slides" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Image Slider</div><div class="card-desc">Rotating slides carousel</div></div>
+<div class="select-card" data-value="Animated particle, 3D, or interactive canvas hero background" onclick="selectCard(this,'hero')"><span class="check-mark">✓</span><div class="card-title">Particle / 3D</div><div class="card-desc">Interactive animated canvas</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Content Layout</label><div class="card-grid compact" id="contentGrid">
+<div class="select-card" data-value="Card-based grid layout for content sections" onclick="selectCard(this,'content')"><span class="check-mark">✓</span><div class="card-title">Card Grid</div><div class="card-desc">Grid of cards for content</div></div>
+<div class="select-card" data-value="Single column with alternating left-right sections" onclick="selectCard(this,'content')"><span class="check-mark">✓</span><div class="card-title">Alternating</div><div class="card-desc">Zigzag left-right sections</div></div>
+<div class="select-card" data-value="Masonry / Pinterest-style grid layout" onclick="selectCard(this,'content')"><span class="check-mark">✓</span><div class="card-title">Masonry</div><div class="card-desc">Pinterest-style staggered grid</div></div>
+<div class="select-card" data-value="Timeline / scroll-based storytelling layout" onclick="selectCard(this,'content')"><span class="check-mark">✓</span><div class="card-title">Timeline</div><div class="card-desc">Scrolling story or history</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Footer Style</label><div class="card-grid compact" id="footerGrid">
+<div class="select-card" data-value="Minimal footer with copyright and social links in one line" onclick="selectCard(this,'footer')"><span class="check-mark">✓</span><div class="card-title">Minimal</div><div class="card-desc">One-line copyright &amp; links</div></div>
+<div class="select-card" data-value="Multi-column footer with links, about, contact, and social sections" onclick="selectCard(this,'footer')"><span class="check-mark">✓</span><div class="card-title">Multi-Column</div><div class="card-desc">Links, about, contact columns</div></div>
+<div class="select-card" data-value="Fat footer with newsletter signup, links, map, and social icons" onclick="selectCard(this,'footer')"><span class="check-mark">✓</span><div class="card-title">Fat Footer</div><div class="card-desc">Newsletter, map, rich content</div></div>
+<div class="select-card" data-value="Sticky bottom bar with key CTA and quick links always visible" onclick="selectCard(this,'footer')"><span class="check-mark">✓</span><div class="card-title">Sticky Bar</div><div class="card-desc">Fixed bottom bar with CTA</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Section Spacing</label><div class="card-grid compact" id="spacingGrid">
+<div class="select-card" data-value="Compact section spacing with minimal padding between sections" onclick="selectCard(this,'spacing')"><span class="check-mark">✓</span><div class="card-title">Compact</div><div class="card-desc">Dense, tight, more content visible</div></div>
+<div class="select-card" data-value="Normal section spacing with balanced padding" onclick="selectCard(this,'spacing')"><span class="check-mark">✓</span><div class="card-title">Normal</div><div class="card-desc">Balanced, standard padding</div></div>
+<div class="select-card" data-value="Spacious section spacing with generous whitespace and breathing room" onclick="selectCard(this,'spacing')"><span class="check-mark">✓</span><div class="card-title">Spacious</div><div class="card-desc">Generous whitespace, airy</div></div>
+</div></div>
+<div><label class="section-label">Scroll Animation Style</label><div class="card-grid compact" id="animationGrid">
+<div class="select-card" data-value="Fade-in animations on scroll for sections and elements" onclick="selectCard(this,'animation')"><span class="check-mark">✓</span><div class="card-title">Fade In</div><div class="card-desc">Elements fade in on scroll</div></div>
+<div class="select-card" data-value="Slide-up animations on scroll with staggered delays" onclick="selectCard(this,'animation')"><span class="check-mark">✓</span><div class="card-title">Slide Up</div><div class="card-desc">Staggered slide-up reveals</div></div>
+<div class="select-card" data-value="Parallax layers with depth-based scrolling effects" onclick="selectCard(this,'animation')"><span class="check-mark">✓</span><div class="card-title">Parallax Layers</div><div class="card-desc">Depth-based scroll effects</div></div>
+<div class="select-card" data-value="No scroll animations, keep it static and clean" onclick="selectCard(this,'animation')"><span class="check-mark">✓</span><div class="card-title">None</div><div class="card-desc">Static, no animation</div></div>
+</div></div>
+<div class="step-nav"><button class="btn btn-secondary" onclick="prevStep()">← Back</button><a class="skip-link" onclick="nextStep()">Skip this step</a><button class="btn btn-primary" onclick="nextStep()">Next →</button></div>
+</div>
+<!-- Step 5: Content -->
+<div class="step-panel" data-step="5">
+<div class="step-header"><h2 class="step-title">Content details</h2><span class="step-counter">Step 5 of 7</span></div>
+<p class="step-description">Tell us about your website's content and tone. All fields are optional.</p>
+<div class="input-row">
+<div class="input-group"><label>Website / Business Name</label><input id="siteName" placeholder="e.g. Starter Cafe" type="text"/></div>
+<div class="input-group"><label>Tagline / Headline</label><input id="siteTagline" placeholder="e.g. Fresh coffee, warm vibes" type="text"/></div>
+</div>
+<div class="input-group"><label>Brief Description (what is the site about?)</label><textarea id="siteDescription" placeholder="e.g. A modern cafe in downtown Portland serving specialty coffee and homemade pastries."></textarea></div>
+<div style="margin-bottom:28px"><label class="section-label">Tone / Voice</label><div class="card-grid compact" id="toneGrid">
+<div class="select-card" data-value="Professional and trustworthy" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Professional</div><div class="card-desc">Trustworthy, confident</div></div>
+<div class="select-card" data-value="Casual and friendly" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Casual &amp; Friendly</div><div class="card-desc">Approachable, relaxed</div></div>
+<div class="select-card" data-value="Bold and energetic" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Bold &amp; Energetic</div><div class="card-desc">Dynamic, high-energy</div></div>
+<div class="select-card" data-value="Elegant and sophisticated" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Elegant</div><div class="card-desc">Sophisticated, refined</div></div>
+<div class="select-card" data-value="Playful and fun" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Playful &amp; Fun</div><div class="card-desc">Lighthearted, cheerful</div></div>
+<div class="select-card" data-value="Minimal and direct" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Minimal &amp; Direct</div><div class="card-desc">Clean, to the point</div></div>
+<div class="select-card" data-value="Warm and welcoming" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Warm &amp; Welcoming</div><div class="card-desc">Cozy, inviting</div></div>
+<div class="select-card" data-value="Techy and innovative" onclick="selectCard(this,'siteTone')"><span class="check-mark">✓</span><div class="card-title">Tech &amp; Innovative</div><div class="card-desc">Forward-thinking, modern</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Number of Pages</label><div class="card-grid compact" id="pageGrid">
+<div class="select-card" data-value="Single page (one-page scrolling)" onclick="selectCard(this,'pageCount')"><span class="check-mark">✓</span><div class="card-title">Single Page</div><div class="card-desc">One-page scrolling site</div></div>
+<div class="select-card" data-value="Multi-page (3-5 pages)" onclick="selectCard(this,'pageCount')"><span class="check-mark">✓</span><div class="card-title">Multi-page (3-5)</div><div class="card-desc">Small site, a few pages</div></div>
+<div class="select-card" data-value="Multi-page (5-10 pages)" onclick="selectCard(this,'pageCount')"><span class="check-mark">✓</span><div class="card-title">Multi-page (5-10)</div><div class="card-desc">Larger site, many pages</div></div>
+</div></div>
+<div class="input-group"><label>Specific Sections to Include (optional)</label><input id="customSections" placeholder="e.g. Team, Testimonials, Portfolio, Menu, Booking Form" type="text"/></div>
+<div class="step-nav"><button class="btn btn-secondary" onclick="prevStep()">← Back</button><a class="skip-link" onclick="nextStep()">Skip this step</a><button class="btn btn-primary" onclick="nextStep()">Next →</button></div>
+</div>
+<!-- Step 7: Tech -->
+<!-- Step 6: Features & Tech -->
+<div class="step-panel" data-step="6">
+<div class="step-header"><h2 class="step-title">Features &amp; tech stack</h2><span class="step-counter">Step 6 of 7</span></div>
+<p class="step-description">Select interactive features and choose your technology preferences.</p>
+<div style="margin-bottom:28px"><label class="section-label">Interactive Features</label>
+<div class="feature-grid" id="featureGrid">
+<div class="feature-card" data-value="Responsive hamburger mobile menu" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Mobile Menu</span></div>
+<div class="feature-card" data-value="Dark / Light mode toggle" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Dark/Light Toggle</span></div>
+<div class="feature-card" data-value="Smooth scroll navigation" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Smooth Scroll</span></div>
+<div class="feature-card" data-value="Scroll-triggered fade-in animations" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Scroll Animations</span></div>
+<div class="feature-card" data-value="Contact form with validation" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Contact Form</span></div>
+<div class="feature-card" data-value="Image or testimonial carousel/slider" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Carousel / Slider</span></div>
+<div class="feature-card" data-value="Pricing table section" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Pricing Table</span></div>
+<div class="feature-card" data-value="FAQ accordion section" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">FAQ Accordion</span></div>
+<div class="feature-card" data-value="Back to top button" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Back to Top</span></div>
+<div class="feature-card" data-value="Parallax scrolling effect" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Parallax Effect</span></div>
+<div class="feature-card" data-value="Animated statistics counter section" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Stats Counter</span></div>
+<div class="feature-card" data-value="Image lightbox gallery" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Image Lightbox</span></div>
+<div class="feature-card" data-value="Newsletter subscription form" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Newsletter Signup</span></div>
+<div class="feature-card" data-value="Social media icon links" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Social Links</span></div>
+<div class="feature-card" data-value="Google Maps embed" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Google Maps</span></div>
+<div class="feature-card" data-value="Preloader / loading animation" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Preloader</span></div>
+<div class="feature-card" data-value="Sticky call-to-action button" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Sticky CTA</span></div>
+<div class="feature-card" data-value="Custom cursor effect" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Custom Cursor</span></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Technology Stack</label><div class="card-grid" id="techGrid">
+<div class="select-card" data-value="Pure HTML, CSS, and vanilla JavaScript" onclick="selectCard(this,'tech')"><span class="check-mark">✓</span><span class="card-icon">🌐</span><div class="card-title">HTML / CSS / JS</div><div class="card-desc">Pure vanilla, no frameworks</div></div>
+<div class="select-card" data-value="HTML with Tailwind CSS and vanilla JavaScript" onclick="selectCard(this,'tech')"><span class="check-mark">✓</span><span class="card-icon">💨</span><div class="card-title">Tailwind CSS</div><div class="card-desc">Utility-first CSS framework</div></div>
+<div class="select-card" data-value="HTML with Bootstrap 5 framework" onclick="selectCard(this,'tech')"><span class="check-mark">✓</span><span class="card-icon">🅱</span><div class="card-title">Bootstrap 5</div><div class="card-desc">Popular component framework</div></div>
+<div class="select-card" data-value="React (JSX) with CSS modules or styled-components" onclick="selectCard(this,'tech')"><span class="check-mark">✓</span><span class="card-icon">⚛</span><div class="card-title">React</div><div class="card-desc">Component-based with JSX</div></div>
+</div></div>
+<div style="margin-bottom:28px"><label class="section-label">Code Preferences</label><div class="feature-grid" id="techFeatureGrid">
+<div class="feature-card" data-value="Include detailed code comments" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Code Comments</span></div>
+<div class="feature-card" data-value="Use semantic HTML5 elements" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Semantic HTML5</span></div>
+<div class="feature-card" data-value="Use CSS custom properties (variables)" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">CSS Variables</span></div>
+<div class="feature-card" data-value="Optimize for SEO with proper meta tags" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">SEO Meta Tags</span></div>
+<div class="feature-card" data-value="Include Google Fonts" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Google Fonts</span></div>
+<div class="feature-card" data-value="Use Font Awesome or Lucide icons" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Icon Library</span></div>
+<div class="feature-card" data-value="Ensure WCAG accessibility standards" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Accessibility</span></div>
+<div class="feature-card" data-value="Keep all code in a single HTML file" onclick="toggleFeature(this)"><span class="feature-toggle">✓</span><span class="feature-label">Single File</span></div>
+</div></div>
+<div class="input-group"><label>Font Preferences (optional)</label><input id="fontPref" placeholder="e.g. Playfair Display for headings, Inter for body text" type="text"/></div>
+<div class="step-nav"><button class="btn btn-secondary" onclick="prevStep()">← Back</button><button class="btn btn-generate" onclick="generatePrompt()">✨ Generate Prompt</button></div>
+</div>
+<!-- Step 7: Output -->
+<div class="step-panel" data-step="7">
+<div class="step-header"><h2 class="step-title">Your AI prompt is ready!</h2><span class="step-counter">Step 7 of 7</span></div>
+<p class="step-description">Copy this prompt and paste it into ChatGPT, Claude, or any AI tool to generate your website.</p>
+<div class="prompt-output-container">
+<div class="prompt-output-header">
+<div class="prompt-output-title"><span>📋</span> Generated Prompt</div>
+<div class="prompt-output-actions">
+<button class="btn-sm" id="copyBtn" onclick="copyPrompt()"><span>📋</span> Copy</button>
+<button class="btn-sm" onclick="downloadPrompt()"><span>📥</span> Download .txt</button>
+</div>
+</div>
+<div class="prompt-text" contenteditable="true" id="promptOutput"></div>
+<div class="prompt-resize-bar" id="resizeBar">
+<div class="resize-grip"><span></span><span></span></div>
+<div class="resize-btns" onclick="event.stopPropagation()">
+<button class="resize-btn resize-btn-min" onclick="setPromptHeight('min')" title="Compact"><div class="resize-btn-inner"></div></button>
+<button class="resize-btn resize-btn-mid active" onclick="setPromptHeight('mid')" title="Default"><div class="resize-btn-inner"></div></button>
+<button class="resize-btn resize-btn-max" onclick="setPromptHeight('max')" title="Expanded"><div class="resize-btn-inner"></div></button>
+</div>
+</div>
+<div class="edit-hint">✏ Click the text above to edit your prompt before copying.</div>
+<div class="quality-score">
+<span class="quality-label">Prompt Detail Score</span>
+<div class="quality-bar"><div class="quality-fill" id="qualityFill"></div></div>
+<span class="quality-percent" id="qualityPercent">0%</span>
+</div>
+</div>
+<div class="output-footer">
+<div class="output-tip">Want to tweak it? <a href="#" onclick="goToStep(1);return false;">Edit your selections</a></div>
+<div style="display:flex;gap:10px">
+<button class="btn-start-over" onclick="startOver()">Start Over</button>
+<button class="btn btn-secondary" onclick="prevStep()">← Edit</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Progress -->
+<div class="bottom-progress">
+<div class="progress-bar-track">
+<div class="progress-bar-fill" id="progressBarFill" style="width: 12.5%"></div>
+</div>
+<div class="progress-rows" id="progressSteps">
+<div class="progress-row" id="progressRow1"></div>
+<div class="progress-row" id="progressRow2"></div>
+</div>
+</div>
+<!-- Share Buttons -->
+<div style="max-width:940px;margin:0 auto;padding:0 24px 24px">
+<div class="sharethis-inline-share-buttons"></div>
+</div>
+<!-- TAGNAME: Desktop Horizontal Bottom --> <div id="templatemocom47889"> </div> <!-- TAGNAME: Mobile Bottom --> <div id="templatemocom47892"> </div>
+<footer class="site-footer">
+<p>Made with ♥ by <a href="../index.html" rel="noopener" target="_blank">TemplateMo</a> — Free CSS Templates for Everyone</p>
+</footer>
+<div class="toast" id="toast">Prompt copied to clipboard!</div>
+<script src="https://templatemo.com/ai-website-prompt-generator/tm-prompt-04.min.js"></script>
+<!-- Change Consent Option FundingChoices --><div id="fluid-privacy-opt-out-link" onmouseout="this.style.color='#CCCCCC'; this.style.cursor='auto'" onmouseover="this.style.color='rgb(25, 103, 210)'; this.style.cursor='pointer'"></div><script> const privacyOptOutLink = document.getElementById("fluid-privacy-opt-out-link"); window.googlefc = window.googlefc || { callbackQueue: [] }; window.googlefc.ccpa = window.googlefc.ccpa || {}; window.googlefc.callbackQueue.push( { "CONSENT_API_READY": () => { if (!privacyOptOutLink) { return; } privacyOptOutLink.addEventListener("click", () => googlefc.showRevocationMessage()); !!window.__tcfapi && window.__tcfapi("addEventListener", 2, (tcData, success) => { if (success && tcData.gdprApplies) { privacyOptOutLink.innerText = "Change GDPR Consent"; return; } if (googlefc.ccpa.InitialCcpaStatusEnum() === googlefc.ccpa.InitialCcpaStatusEnum.NOT_OPTED_OUT) { window.googlefc.ccpa.overrideDnsLink = true; privacyOptOutLink.innerText = "Don't sell or share my personal info"; privacyOptOutLink.addEventListener("click", () => googlefc.ccpa.openConfirmationDialog((optedOut) => { if (optedOut) { privacyOptOutLink.style.display = "none"; } })); return } }); } });</script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"c4ca6eb172664bf883440371cc8d12bf","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" src="../assets/js/js-aabc4a04.js"></script>
+<script data-clone-nav-bridge="true">
+    (function () {
+      const routeLookup = {"https://templatemo.com/live/templatemo_591_villa_agency/":"../live/templatemo_591_villa_agency/index.html","https://templatemo.com/":"../index.html","https://templatemo.com/about/":"../about/index.html","https://templatemo.com/contact/":"../contact/index.html","https://templatemo.com/links/":"../links/index.html","https://templatemo.com/tm-431-ion/":"../tm-431-ion/index.html","https://templatemo.com/tm-153-gray/":"../tm-153-gray/index.html","https://templatemo.com/templates/templatemo_591_villa_agency/":"../templates/templatemo_591_villa_agency/index.html","https://templatemo.com/page/1/":"../page/1/index.html","https://templatemo.com/templates/portfolio-website-templates/":"../templates/portfolio-website-templates/index.html","https://templatemo.com/tag/multi-page/":"../tag/multi-page/index.html","https://templatemo.com/templates/business-website-templates/":"../templates/business-website-templates/index.html","https://templatemo.com/templates/bootstrap-5-website-templates/":"../pages/templates-bootstrap-5-website-templates-b001c82a1e.html","https://templatemo.com/templates/landing-page-website-templates/":"../pages/templates-landing-page-website-templates-67422f9a43.html","https://templatemo.com/templates/one-page-website-templates/":"../templates/one-page-website-templates/index.html","https://templatemo.com/tag/digital-marketing/":"../tag/digital-marketing/index.html","https://templatemo.com/ai-website-prompt-generator/":"index.html","https://templatemo.com/tm-615-amber-folio/":"../tm-615-amber-folio/index.html","https://templatemo.com/tm-614-quantix-saas/":"../tm-614-quantix-saas/index.html","https://templatemo.com/tm-613-frost-bakery/":"../tm-613-frost-bakery/index.html","https://templatemo.com/tm-612-parallax-starter/":"../tm-612-parallax-starter/index.html","https://templatemo.com/tm-611-maison-doree/":"../tm-611-maison-doree/index.html","https://templatemo.com/tm-610-aurum-gold/":"../tm-610-aurum-gold/index.html","https://templatemo.com/tm-609-crypto-vault/":"../tm-609-crypto-vault/index.html","https://templatemo.com/tm-608-daynight-admin/":"../tm-608-daynight-admin/index.html","https://templatemo.com/tm-556-catalog-z/":"../tm-556-catalog-z/index.html","https://templatemo.com/tm-559-zay-shop/":"../tm-559-zay-shop/index.html","https://templatemo.com/tm-562-space-dynamic/":"../tm-562-space-dynamic/index.html","https://templatemo.com/tm-564-plot-listing/":"../tm-564-plot-listing/index.html","https://templatemo.com/tm-570-chain-app-dev/":"../tm-570-chain-app-dev/index.html","https://templatemo.com/tm-574-mexant/":"../tm-574-mexant/index.html","https://templatemo.com/tm-578-first-portfolio/":"../tm-578-first-portfolio/index.html","https://templatemo.com/tm-580-woox-travel/":"../tm-580-woox-travel/index.html","https://templatemo.com/privacy-policy/":"../privacy-policy/index.html","https://templatemo.com/tag/one-page/":"../tag/one-page/index.html","https://templatemo.com/tag/landing-page/":"../tag/landing-page/index.html","https://templatemo.com/tag/responsive/":"../tag/responsive/index.html","https://templatemo.com/tag/bootstrap/":"../tag/bootstrap/index.html","https://templatemo.com/tag/mobile/":"../tag/mobile/index.html","https://templatemo.com/tag/white/":"../tag/white/index.html","https://templatemo.com/live/templatemo_431_ion/":"../live/templatemo_431_ion/index.html","https://templatemo.com/download/templatemo_431_ion/":"../download/templatemo_431_ion/index.html","https://templatemo.com/tm-434-masonry/":"../tm-434-masonry/index.html","https://templatemo.com/tm-433-gloss/":"../tm-433-gloss/index.html","https://templatemo.com/tm-432-impressum/":"../tm-432-impressum/index.html","https://templatemo.com/tm-430-robotic/":"../tm-430-robotic/index.html","https://templatemo.com/tm-429-pro-audio/":"../tm-429-pro-audio/index.html","https://templatemo.com/tm-428-kool-store/":"../tm-428-kool-store/index.html","https://templatemo.com/live/templatemo_153_gray/":"../live/templatemo_153_gray/index.html","https://templatemo.com/download/templatemo_153_gray/":"../download/templatemo_153_gray/index.html","https://templatemo.com/tm-155-western-shop/":"../tm-155-western-shop/index.html","https://templatemo.com/tm-154-toy-addict/":"../tm-154-toy-addict/index.html","https://templatemo.com/tm-153-green/":"../tm-153-green/index.html","https://templatemo.com/tm-152-projection/":"../tm-152-projection/index.html","https://templatemo.com/tm-151-grunge/":"../tm-151-grunge/index.html","https://templatemo.com/tm-150-creative-idea/":"../tm-150-creative-idea/index.html"};
+      const sourcePageUrl = "https://templatemo.com/ai-website-prompt-generator/";
+      const rootHost = "templatemo.com";
+      const indexNames = ['index.html', 'index.htm', 'index.php', 'index.asp', 'index.aspx', 'default.aspx', 'default.asp'];
+      const trackingPrefixes = ['utm_', 'fbclid', 'gclid', 'mc_cid', 'mc_eid'];
+
+      function normalizeHost(rawValue) {
+        let host = `${rawValue || ''}`.trim().toLowerCase();
+        if (!host) return '';
+        if (host.startsWith('www.')) host = host.slice(4);
+        return host;
+      }
+
+      function withinScope(host) {
+        const normalized = normalizeHost(host);
+        return !!normalized && !!rootHost && (normalized === rootHost || normalized.endsWith(`.${rootHost}`));
+      }
+
+      function normalizePathname(pathname) {
+        let path = decodeURIComponent(`${pathname || '/'}`.trim() || '/');
+        path = path.replace(/[/]+/g, '/');
+        if (!path.startsWith('/')) path = `/${path}`;
+        let lower = path.toLowerCase();
+        for (const indexName of indexNames) {
+          const suffix = `/${indexName}`;
+          if (lower.endsWith(suffix)) {
+            path = path.slice(0, -indexName.length);
+            if (!path.endsWith('/')) path += '/';
+            lower = path.toLowerCase();
+            break;
+          }
+        }
+        if (path === '/.' || !path) path = '/';
+        const trimmed = path.replace(/[/]+$/, '');
+        const hasExtension = /[.][a-z0-9]+$/i.test(trimmed);
+        if (path !== '/' && !hasExtension && !path.endsWith('/')) path += '/';
+        return path;
+      }
+
+      function normalizeUrlCandidate(rawValue, baseValue) {
+        const raw = `${rawValue || ''}`.trim();
+        if (!raw || /^(?:mailto:|tel:|javascript:|data:|#)/i.test(raw)) return '';
+        try {
+          const resolved = new URL(raw, baseValue || sourcePageUrl || window.location.href);
+          if (!withinScope(resolved.host)) return '';
+          resolved.hash = '';
+          resolved.pathname = normalizePathname(resolved.pathname);
+          const filtered = [];
+          Array.from(resolved.searchParams.entries())
+            .filter(([key]) => !trackingPrefixes.some(prefix => key.toLowerCase().startsWith(prefix)))
+            .sort(([aKey, aValue], [bKey, bValue]) => {
+              const left = `${aKey.toLowerCase()}:${aValue}`;
+              const right = `${bKey.toLowerCase()}:${bValue}`;
+              return left.localeCompare(right);
+            })
+            .forEach(([key, value]) => filtered.push([key, value]));
+          resolved.search = '';
+          filtered.forEach(([key, value]) => resolved.searchParams.append(key, value));
+          resolved.hostname = normalizeHost(resolved.hostname);
+          if ((resolved.protocol === 'http:' && resolved.port === '80') || (resolved.protocol === 'https:' && resolved.port === '443')) {
+            resolved.port = '';
+          }
+          return resolved.toString();
+        } catch (error) {
+          return '';
+        }
+      }
+
+      function rewriteRouteValue(rawValue) {
+        const raw = `${rawValue || ''}`.trim();
+        if (!raw || raw.startsWith('#') || /^(?:mailto:|tel:|javascript:|data:)/i.test(raw)) return raw;
+        let fragment = '';
+        const hashIndex = raw.indexOf('#');
+        const candidate = hashIndex >= 0 ? raw.slice(0, hashIndex) : raw;
+        if (hashIndex >= 0) fragment = raw.slice(hashIndex);
+        const normalized = normalizeUrlCandidate(candidate, sourcePageUrl || window.location.href);
+        if (!normalized) return raw;
+        const rewritten = routeLookup[normalized];
+        return rewritten ? `${rewritten}${fragment}` : raw;
+      }
+
+      function rewriteCloneAttributes(root) {
+        if (!root || !root.querySelectorAll) return;
+        root.querySelectorAll('a[href], area[href], [data-href], [data-url], [data-link], [data-path], [data-route], [formaction], form[action]').forEach((node) => {
+          ['href', 'data-href', 'data-url', 'data-link', 'data-path', 'data-route', 'formaction', 'action'].forEach((attribute) => {
+            const current = node.getAttribute(attribute);
+            if (!current) return;
+            const rewritten = rewriteRouteValue(current);
+            if (rewritten && rewritten !== current) {
+              node.setAttribute(attribute, rewritten);
+            }
+          });
+          if (node.matches('[data-href], [data-url], [data-link], [data-path], [data-route], [formaction]') && !node.closest('a')) {
+            node.setAttribute('data-clone-clickable', 'true');
+            if (!node.getAttribute('tabindex')) node.setAttribute('tabindex', '0');
+            if (!node.getAttribute('role')) node.setAttribute('role', 'link');
+          }
+        });
+      }
+
+      function toggleDropdown(target) {
+        const holder = target.closest('.dropdown, .menu-item-has-children, .has-submenu, .nav-item');
+        const menu = holder && holder.querySelector('.dropdown-menu, .sub-menu, .children, .submenu');
+        if (!holder || !menu) return false;
+        const isOpen = holder.classList.contains('show') || holder.classList.contains('open');
+        holder.classList.toggle('show', !isOpen);
+        holder.classList.toggle('open', !isOpen);
+        menu.classList.toggle('show', !isOpen);
+        menu.classList.toggle('open', !isOpen);
+        target.setAttribute('aria-expanded', String(!isOpen));
+        return true;
+      }
+
+      function navigateTarget(target) {
+        if (!target) return;
+        const href = target.getAttribute('data-href') || target.getAttribute('data-url') || target.getAttribute('formaction');
+        if (!href || href.startsWith('javascript:') || href.startsWith('#')) return;
+        window.location.href = href;
+      }
+
+      document.addEventListener('click', function (event) {
+        const dropdownToggle = event.target.closest('[data-bs-toggle="dropdown"], [data-toggle="dropdown"], .dropdown-toggle, [aria-haspopup="true"]');
+        if (dropdownToggle && !dropdownToggle.closest('a[href]')) {
+          event.preventDefault();
+          if (toggleDropdown(dropdownToggle)) return;
+        }
+
+        const target = event.target.closest('[data-clone-clickable="true"], [data-href], [data-url], [formaction]');
+        if (!target) return;
+        if (target.closest('a')) return;
+        if (target.tagName === 'BUTTON' && target.type && target.type !== 'button') return;
+        event.preventDefault();
+        navigateTarget(target);
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        const target = event.target.closest('[data-clone-clickable="true"]');
+        if (!target) return;
+        event.preventDefault();
+        navigateTarget(target);
+      });
+
+      rewriteCloneAttributes(document);
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'attributes' && mutation.target) {
+            rewriteCloneAttributes(mutation.target.ownerDocument || document);
+            return;
+          }
+          mutation.addedNodes.forEach((node) => {
+            if (node && node.nodeType === 1) rewriteCloneAttributes(node);
+          });
+        });
+      });
+      observer.observe(document.documentElement || document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['href', 'data-href', 'data-url', 'data-link', 'data-path', 'data-route', 'formaction', 'action']
+      });
+    }());
+    </script></body>
+</html>
